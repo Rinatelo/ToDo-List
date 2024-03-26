@@ -23,7 +23,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 400px;
-  margin: 15px auto;
+  margin: 200px auto;
 }
 
 .todo__input {
