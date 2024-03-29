@@ -1,10 +1,8 @@
 export function setItemAsync(key, value) {
   return new Promise((resolve, reject) => {
     try {
-      setTimeout(() => {
-        localStorage.setItem(key, value);
-        resolve();
-      }, 0);
+      localStorage.setItem(key, value);
+      resolve();
     } catch (error) {
       reject(error);
     }
@@ -14,10 +12,8 @@ export function setItemAsync(key, value) {
 export function getItemAsync(key) {
   return new Promise((resolve, reject) => {
     try {
-      setTimeout(() => {
-        const value = localStorage.getItem(key);
-        resolve(value);
-      }, 0);
+      const value = localStorage.getItem(key);
+      resolve(value);
     } catch (error) {
       reject(error);
     }
